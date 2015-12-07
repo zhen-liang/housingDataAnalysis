@@ -1,5 +1,5 @@
 # housingDataAnalysis
-
+[Link of the visualization on map](http://bit.ly/1J3WWWH)
 [![Visualization on map](map.png)](http://bit.ly/1J3WWWH)
 
 
