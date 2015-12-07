@@ -1,5 +1,6 @@
 # housingDataAnalysis
  [visualization on map](http://bit.ly/1J3WWWH)
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
 
 <div class="col-md-6 portfolio-item">
                 <a href="#">
