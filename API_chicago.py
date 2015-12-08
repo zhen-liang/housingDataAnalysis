@@ -25,7 +25,7 @@ from urllib2 import urlopen # 从urllib2包中导入urlopen()函数
 website_neighborhood = urlopen(url_neighborhood)
 # 读取xml 树状结构
 import xml.etree.ElementTree as ET # 导入xml.etree.ElementTree包，并重命名为简写ET
-tree_neighborhood=ET.parse(website_neighborhood) #调用ET包种的parse()函数
+tree_neighborhood=ET.parse(website_neighborhood) #调用ET包中的parse()函数
 # 获取xml 树的根
 root_neighborhood=tree_neighborhood.getroot()
 # 根据树的结构，以root_neighborhood为起点，查找每一个neighborhood的名字，保存在名为neighborhood的list里
@@ -117,7 +117,7 @@ for i in neighborhood:
 		medianSalePrice=root.findall("./response/pages/page")[0].findall('./tables/table/data/attribute')[10][1][0][0].text
 	else:
 		medianSalePrice=np.NaN
-	... # 此处省略若干行
+	
 	# 将获取到的信息整合成一个 dictionary, dictionary数据结构的特征是 {key:value} （即{关键字：值} ）成对出现
 	a={'neighborhood':i,'medianSalePrice':medianSalePrice, 'medHouseIncome':medHouseIncome,'avgCommuteTime':avgCommuteTime,'Renters_percent':Renters_percent,'url_OwnersvsRenters':url_OwnersvsRenters}
 	c=DataFrame([a]) # 把a变为 DataFrame格式
